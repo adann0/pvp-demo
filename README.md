@@ -29,7 +29,7 @@ TradingView-based charting with custom tooling for strategy prototyping. For exa
 
 ### Dashboards
 
-Custom dashboards aggregating cross-market signals and derived features.
+Custom dashboards aggregating cross-market datas and derived features.
 
 ![Dashboards](futures.png)
 
