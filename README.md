@@ -15,7 +15,7 @@ Screenshots only - source code and data kept private.
 - **Monitoring**: Grafana + Prometheus
 - **Orchestration**: systemd
 - **Config**: YAML + Pydantic
-- **Docs**: MkDocs Material
+- **Docs**: Material for Mkdocs
 
 ## What's inside
 
