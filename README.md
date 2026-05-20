@@ -1,6 +1,6 @@
 # pvp-demo
 
-End-to-end financial data infrastructure for crypto market research and strategy development. Runs 24/7 on a self-hosted Proxmox server.
+End-to-end market data infrastructure for quantitative research across crypto and synthetic equity/FX markets. Runs 24/7 on a self-hosted Proxmox server.
 
 Screenshots only - source code and data kept private.
 
@@ -42,3 +42,7 @@ Single-pane Grafana view covering ingestion lag, data quality checks, and system
 ## Why no code?
 
 Active personal infrastructure. Happy to walk through the architecture and design decisions in an interview.
+
+## Why these markets?
+
+Public APIs and on-chain data offer granular microstructure (L2 books, trades, funding, oracle feeds) across crypto venues and synthetic markets like SPX perps on Hyperliquid - a rich multi-asset research playground without institutional data subscriptions.
