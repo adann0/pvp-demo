@@ -45,4 +45,4 @@ Active personal infrastructure. Happy to walk through the architecture and desig
 
 ## Why these markets?
 
-Public APIs and on-chain data offer granular microstructure (L2 books, trades, funding, oracle feeds) across crypto venues and synthetic markets like SPX perps on Hyperliquid - a rich multi-asset research playground without institutional data subscriptions.
+Public APIs and on-chain data offer granular microstructure (L2 books, trades, funding, oracle feeds) across crypto venues and synthetic markets like SPX perps on Hyperliquid, providing a large multi-asset research playground without institutional data subscriptions.
