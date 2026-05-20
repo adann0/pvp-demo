@@ -13,7 +13,7 @@ Screenshots only - source code and data kept private.
 - **Featurization**: async Python pipelines
 - **Data quality**: Great Expectations
 - **Monitoring**: Grafana + Prometheus
-- **Orchestration**: systemd
+- **Orchestration**: systemd + Ansible
 - **Config**: YAML + Pydantic
 - **Docs**: Material for Mkdocs
 
