@@ -1,0 +1,44 @@
+# pvp-demo
+
+End-to-end financial data infrastructure for crypto market research and strategy development. Runs 24/7 on a self-hosted Proxmox server.
+
+Screenshots only - source code and data kept private.
+
+## Stack
+
+- **Web app**: Python 3, FastAPI, Jinja, HTMX, TradingView Charting Library, Highcharts
+- **Storage**: Delta Lake, ClickHouse, Redis, MinIO
+- **Streaming**: RedPanda
+- **Ingestion**: async Python scrapers (multi-exchange)
+- **Featurization**: async Python pipelines
+- **Data quality**: Great Expectations
+- **Monitoring**: Grafana + Prometheus
+- **Orchestration**: systemd
+- **Config**: YAML + Pydantic
+- **Docs**: MkDocs Material
+
+## What's inside
+
+A full pipeline ingesting market data from multiple exchanges, storing it in a lakehouse architecture, and serving it through a research web app for strategy exploration.
+
+### Research interface
+
+TradingView-based charting with custom tooling for strategy prototyping. For example, candles can be rendered as tick bars rather than time bars.
+
+![Chart](chart.png)
+
+### Dashboards
+
+Custom dashboards aggregating cross-market signals and derived features.
+
+![Dashboards](futures.png)
+
+### Monitoring
+
+Single-pane Grafana view covering ingestion lag, data quality checks, and system health.
+
+![Grafana](grafana.png)
+
+## Why no code?
+
+Active personal infrastructure. Happy to walk through the architecture and design decisions in an interview.
