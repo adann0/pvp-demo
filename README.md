@@ -11,11 +11,12 @@ Screenshots only - source code and data kept private.
 - **Streaming**: RedPanda
 - **Ingestion**: async Python scrapers (multi-exchange)
 - **Featurization**: async Python pipelines
-- **Data quality**: Great Expectations
 - **Monitoring**: Grafana + Prometheus
 - **Orchestration**: systemd + Ansible
 - **Config**: YAML + Pydantic
 - **Docs**: Material for Mkdocs
+- **Tests** : pytest, pytest-cov
+- **Data quality**: Great Expectations
 
 ## What's inside
 
