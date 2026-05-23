@@ -19,7 +19,7 @@ Screenshots only - source code and data kept private.
 - **Backups** : mc, Proxmox Backup
 - **Versioning** : gitea
 
-**Infra** : 1 Dell T350 - 86G RAM - 8vCPU Intel Xeon + 1 Raspberry Pi w/ 4G SIM + 1 APC UPS
+**Infra** : 1 Dell T350 (2T SSD, 16T HD, 86G RAM, 8vCPU Intel Xeon) + 1 Raspberry Pi w/ 4G SIM + 1 APC UPS
 
 ## What's inside
 
