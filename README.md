@@ -12,7 +12,7 @@ Screenshots only - source code and data kept private.
 - **Ingestion**: async Python scrapers (multi-exchange)
 - **Featurization**: async Python pipelines
 - **Monitoring**: Grafana + Prometheus
-- **Orchestration**: systemd + Ansible
+- **Orchestration**: systemd + Ansible + Proxmox + Docker
 - **Config**: YAML + Pydantic
 - **Docs**: Material for Mkdocs
 - **Tests** : pytest, pytest-cov
