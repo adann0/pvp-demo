@@ -7,16 +7,19 @@ Screenshots only - source code and data kept private.
 ## Stack
 
 - **Web app**: Python 3, FastAPI, Jinja, HTMX, TradingView Charting Library, Highcharts
-- **Storage**: Delta Lake, ClickHouse, Redis, MinIO
-- **Streaming**: RedPanda
-- **Ingestion**: async Python scrapers (multi-exchange)
-- **Featurization**: async Python pipelines
-- **Monitoring**: Grafana + Prometheus
-- **Orchestration**: systemd + Ansible + Proxmox + Docker
-- **Config**: YAML + Pydantic
+- **Storage**: Delta Lake and RedPanda as Datalake ; and with ClickHouse and Redis Streams as Feature Store
+- **Ingestion**: async Python scrapers (multi-exchange, twitter, ...)
+- **Featurization**: async Python pipelines (numba/numpy/pandas primitives rewritten to be streaming-friendly - stateful per-symbol buffers maintained in-memory across events, incremental updates instead of batch recompute) (one-server infra, dropped Flink to reduce overhead)
+- **Monitoring/Alerting**: Grafana, Prometheus, Matrix/Element
+- **Orchestration**: systemd, Ansible, Proxmox, Docker
+- **Config**: YAML, Pydantic, SQLModel, sqlacodegen
 - **Docs**: Material for Mkdocs
 - **Tests** : pytest, pytest-cov
 - **Data quality**: Great Expectations
+- **Backups** : mc, Proxmox Backup
+- **Versioning** : gitea
+
+**Infra** : 1 Dell T350 - 86G RAM - 8vCPU Intel Xeon + 1 Raspberry Pi w/ 4G SIM + 1 APC UPS
 
 ## What's inside
 
@@ -40,10 +43,7 @@ Single-pane Grafana view covering ingestion lag, data quality checks, and system
 
 ![Grafana](grafana.png)
 
-## Why no code?
+## TODO
 
-Active personal infrastructure. Happy to walk through the architecture and design decisions in an interview.
-
-## Why these markets?
-
-Public APIs and on-chain data offer granular microstructure (L2 books, trades, funding, oracle feeds) across crypto venues and synthetic markets like SPX perps on Hyperliquid, providing a large multi-asset research playground without institutional data subscriptions.
+- Featurizers checkpoint (resumable/fault-tolerant, restart without recomputing a full table in the Feature Store. Some indicators require state built up from full history, stateful accumulator must dump its state periodically
+- Featurizers lazy backfill (add a new column without recomputing a full table in the Feature Store)
