@@ -47,3 +47,4 @@ Single-pane Grafana view covering ingestion lag, data quality checks, and system
 
 - Featurizers checkpoint (resumable/fault-tolerant, restart without recomputing a full table in the Feature Store. Some indicators require state built up from full history, stateful accumulator must dump its state periodically
 - Featurizers lazy backfill (add a new column without recomputing a full table in the Feature Store)
+- Optimize heavy CPU featurizers
